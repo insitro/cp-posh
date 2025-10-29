@@ -1,0 +1,19 @@
+# Configurations for the data transformations
+name: CellAugmentationDino
+args:
+  use_coarse_dropout: True
+  local_crops_number: 8
+
+normalization:
+  mean:
+    - 5.46571201
+    - 4.09524733
+    - 8.46735941
+    - 9.3865521
+    - 4.32762783
+  std:
+    - 13.7849976
+    - 14.47867581
+    - 17.94137234
+    - 21.77685467
+    - 16.47451669

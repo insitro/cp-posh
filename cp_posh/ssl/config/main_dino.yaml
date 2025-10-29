@@ -1,0 +1,23 @@
+defaults:
+  - meta_arch: dino
+  - transformations: cell_posh
+  - data: cp_posh_300
+  - _self_
+
+wandb:
+  project: "cp_posh"  # This will be used by wandb
+
+nickname: null
+
+trainer:
+  devices: 1
+  num_nodes: 2
+  accelerator: "gpu"
+  max_epochs: 100  # number of epochs for training
+  precision: 32  # mixed precision training
+  default_root_dir: "./snapshots/"
+  accumulate_grad_batches: 1  # gradient accumulation
+
+
+# If checkpoint is specified, we will resume training from the checkpoint
+checkpoint: null

@@ -1,0 +1,23 @@
+cp_posh_300:
+  name: CP_POSH_Dataset
+  args:
+    cell_image_dataframes:
+      - "s3://insitro-research-2023-cellpaint-posh/single_cell_tile_images/moa_300/dataframe.pq"
+    channels:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    is_train: True
+
+  # training data loader configuration
+  loader:
+    num_workers: 32
+    batch_size: 32
+    pin_memory: True
+    drop_last: True
+    shuffle: True
+
+  output_dir: null
+

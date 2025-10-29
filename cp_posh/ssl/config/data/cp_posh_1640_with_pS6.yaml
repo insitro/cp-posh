@@ -1,0 +1,25 @@
+cp_posh_1640_with_pS6:
+  name: CP_POSH_Dataset
+  args:
+    cell_image_dataframes:
+      - "s3://insitro-research-2023-cellpaint-posh/single_cell_tile_images/druggable_genome_1640/dataframe.pq"
+    channels:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+    is_train: True
+
+
+  # training data loader configuration
+  loader:
+    num_workers: 32
+    batch_size: 32
+    pin_memory: True
+    drop_last: True
+    shuffle: True
+
+  output_dir: null
+

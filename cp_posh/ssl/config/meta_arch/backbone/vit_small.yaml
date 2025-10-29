@@ -1,0 +1,6 @@
+name: 'vit_small'
+args:
+  in_chans: 5
+  input_drop: 0.0
+  patch_size: 8
+  drop_path_rate: 0.1
