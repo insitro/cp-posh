@@ -1,5 +1,3 @@
-# cp-posh
-
 ## Code Repository for "A Pooled Cell Painting CRISPR Screening Platform Enables de novo Inference of Gene Function by Self-supervised Deep Learning"
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-models-yellow.svg)](https://huggingface.co/insitro/cp-posh)
